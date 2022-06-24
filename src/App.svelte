@@ -1,13 +1,13 @@
 <script lang="ts">
   import logo from './assets/svelte.png';
   import Counter from './lib/Counter.svelte';
-  import TailwindCss from './TailwindCSS.svelte';
+
+  import './global.scss';
 </script>
 
 <main class="flex items-center justify-center p-4 flex-col">
   <img class="h-40 w-40 mx-auto" src="{logo}" alt="Svelte Logo" />
   <h1 class="text-[#ff3e00] uppercase text-6xl my-8 mx-auto max-w-[14rem]">Hello Typescript!</h1>
-  <TailwindCss />
   <Counter />
   <p class="max-w-[14rem] my-4 mx-auto">
     Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.
