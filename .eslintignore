@@ -1,0 +1,6 @@
+dist
+node_modules
+
+.eslintrc.cjs
+svelte.config.js
+tailwind.config.cjs
