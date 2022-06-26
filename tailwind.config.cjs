@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   plugins: [],
   theme: {
@@ -8,5 +7,4 @@ module.exports = {
   variants: {
     extend: {},
   },
-  darkMode: false,
 };
