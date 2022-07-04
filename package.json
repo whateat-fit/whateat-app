@@ -1,25 +1,32 @@
 {
-  "name": "whateat-app",
   "private": true,
+  "name": "whateat-app",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
     "commitlint": "commitlint --from=HEAD~1",
+    "dev": "vite",
     "format": "yarn prettier --write",
     "format:check": "yarn prettier --check",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
     "gcb": "bash ./scripts/shell/git-create-branch.sh",
     "gcdwp": "bash ./scripts/shell/git-checkout-develop-with-pull.sh",
     "gpc": "bash ./scripts/shell/git-push-changes.sh",
     "grlc": "bash ./scripts/shell/git-reset-local-changes.sh",
+    "lint": "eslint .",
+    "lint:fix": "yarn lint --fix",
+    "prepare": "husky install",
     "reinstall-node-modules": "bash ./scripts/shell/reinstall-node-modules.sh",
     "rlb": "bash ./scripts/shell/remove-local-branches.sh",
     "prettier": "prettier \"**/*.+(js|ts|svelte|json)\" --plugin-search-dir=. ./**/*.html",
-    "lint": "eslint .",
-    "lint:fix": "yarn lint --fix"
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "sass": "^1.53.0",
+    "tailwindcss": "^3.1.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
@@ -31,6 +38,8 @@
     "eslint": "^8.19.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-svelte3": "^4.0.0",
+    "husky": ">=6",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "prettier-package-json": "^2.6.4",
     "prettier-plugin-svelte": "^2.7.0",
@@ -44,11 +53,5 @@
   "volta": {
     "node": "16.15.1",
     "yarn": "1.22.19"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "sass": "^1.53.0",
-    "tailwindcss": "^3.1.4"
   }
 }
