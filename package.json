@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "commitlint": "commitlint --from=HEAD~1",
     "format": "yarn prettier --write",
     "format:check": "yarn prettier --check",
     "check": "svelte-check --tsconfig ./tsconfig.json",
@@ -21,6 +22,8 @@
     "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.49",
     "@tsconfig/svelte": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^5.30.4",
