@@ -1,7 +1,9 @@
 import tailwind from 'tailwindcss';
-import tailwindConfig from './tailwind.config.cjs';
 import autoprefixer from 'autoprefixer';
 
+import tailwindConfig from './tailwind.config.cjs';
+
 export default {
+  // @ts-expect-error
   plugins: [tailwind(tailwindConfig), autoprefixer],
 };
