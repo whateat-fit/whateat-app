@@ -4,5 +4,6 @@
   "printWidth": 100,
   "singleQuote": true,
   "trailingComma": "all",
-  "svelteStrictMode": true
+  "svelteStrictMode": true,
+  "svelteSortOrder": "options-scripts-markup-styles"
 }
