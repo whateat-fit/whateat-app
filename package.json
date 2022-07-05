@@ -20,7 +20,7 @@
     "reinstall-node-modules": "bash ./scripts/shell/reinstall-node-modules.sh",
     "rlb": "bash ./scripts/shell/remove-local-branches.sh",
     "prettier": "prettier \"**/*.+(js|ts|svelte|json)\" --plugin-search-dir=. ./**/*.html",
-    "typecheck": "tsc --noEmit --pretty && npx svelte-type-checker",
+    "typecheck": "tsc --noEmit --pretty",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -47,7 +47,6 @@
     "svelte": "^3.48.0",
     "svelte-check": "^2.8.0",
     "svelte-preprocess": "^4.10.7",
-    "svelte-type-checker": "^0.1.4",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4",
     "vite": "^2.9.13"
