@@ -2,5 +2,8 @@ dist
 node_modules
 
 .eslintrc.cjs
+vite.config.ts
 svelte.config.js
+postcss.config.cjs
 tailwind.config.cjs
+commitlint.config.js

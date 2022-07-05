@@ -20,6 +20,7 @@
     "reinstall-node-modules": "bash ./scripts/shell/reinstall-node-modules.sh",
     "rlb": "bash ./scripts/shell/remove-local-branches.sh",
     "prettier": "prettier \"**/*.+(js|ts|svelte|json)\" --plugin-search-dir=. ./**/*.html",
+    "typecheck": "tsc --noEmit --pretty",
     "preview": "vite preview"
   },
   "dependencies": {
